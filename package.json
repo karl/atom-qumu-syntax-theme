@@ -1,0 +1,15 @@
+{
+  "name": "Qumu syntax theme",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A theme based on the Morrowind theme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/karl/atom-qumu-syntax-theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
