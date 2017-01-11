@@ -1,144 +1,144 @@
 @import "syntax-variables";
 
-atom-text-editor, :host {
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-atom-text-editor .gutter, :host .gutter {
+atom-text-editor .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
-atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+atom-text-editor .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .wrap-guide, :host .wrap-guide {
+atom-text-editor .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
 
-atom-text-editor .indent-guide, :host .indent-guide {
+atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-atom-text-editor .invisible-character, :host .invisible-character {
+atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+atom-text-editor .search-results .syntax--marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+atom-text-editor.is-focused .cursor {
   border-color: @syntax-cursor-color;
 }
 
-atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+atom-text-editor.is-focused .selection .region {
   background-color: @syntax-selection-color;
 }
 
-atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
   background-color: #474f51;
 }
 
-.comment {
+.syntax--comment {
   font-style: italic;
   color: #888A85;
 }
 
-.string {
+.syntax--string {
   color: #EDD400;
 }
 
-.constant.numeric {
+.syntax--constant.syntax--numeric {
   color: #CE5C00;
 }
 
-.constant.language {
+.syntax--constant.syntax--language {
   font-weight: bold;
   color: #ED9038;
 }
 
-.constant.character, .constant.other {
+.syntax--constant.syntax--character, .syntax--constant.syntax--other {
   color: #F57900;
 }
 
-.variable.language, .variable.other {
+.syntax--variable.syntax--language, .syntax--variable.syntax--other {
   color: #729FCF;
 }
 
-.keyword {
+.syntax--keyword {
   font-weight: bold;
   color: #B3C0CD;
 }
 
-.storage {
+.syntax--storage {
   font-weight: bold;
   color: #FFF4BA;
 }
 
-.entity.name {
+.syntax--entity.syntax--name {
   font-weight: bold;
   color: #8AE234;
 }
 
-.entity.other.inherited-class {
+.syntax--entity.syntax--other.syntax--inherited-class {
   font-weight: bold;
   color: #73D216;
 }
 
-.entity.name.function {
+.syntax--entity.syntax--name.syntax--function {
   color: #729FCF;
 }
 
-.variable.language {
+.syntax--variable.syntax--language {
 }
 
-.entity.name.tag {
+.syntax--entity.syntax--name.syntax--tag {
 }
 
-.entity.other.attribute-name {
+.syntax--entity.syntax--other.syntax--attribute-name {
 }
 
-.support.function {
+.syntax--support.syntax--function {
 }
 
-.support.constant {
+.syntax--support.syntax--constant {
 }
 
-.support.type, .support.class {
+.syntax--support.syntax--type, .syntax--support.syntax--class {
 }
 
-.support.other.variable {
+.syntax--support.syntax--other.syntax--variable {
 }
 
-.invalid {
+.syntax--invalid {
 }
 
-.support.class {
+.syntax--support.syntax--class {
   font-weight: bold;
   color: #AD7FA8;
 }
 
-.markup.deleted {
+.syntax--markup.syntax--deleted {
   color: #F92672;
 }
 
-.markup.inserted {
+.syntax--markup.syntax--inserted {
   color: #A6E22E;
 }
 
-.markup.changed {
+.syntax--markup.syntax--changed {
   color: #967EFB;
 }
